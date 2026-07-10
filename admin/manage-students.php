@@ -10,6 +10,12 @@ else{
 
 
 // Code for Deletion
+if(isset($_GET['del']))
+{
+mysqli_query($con,"delete from students where StudentRegno = '".$_GET['id']."'");
+echo '<script>alert("Student Record Deleted Successfully !!")</script>';
+echo '<script>window.location.href=manage-students.php</script>';
+      }
 
 
 //Code for Password Rest
