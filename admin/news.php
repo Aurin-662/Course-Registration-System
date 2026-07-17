@@ -22,12 +22,13 @@ echo "<script>window.location.href='news.php'</script>";
 }
 }
 
+//Code Deletion
 if(isset($_GET['del']))
 {
 $nid=$_GET['id'];    
 mysqli_query($con,"delete from news where id ='$nid'");
 echo '<script>alert("News deleted succesfully.")</script>';
-echo '<script>window.location.href=news.php</script>'; 
+echo '<script>window.location.href=news.php</script>';
 }
 ?>
 
