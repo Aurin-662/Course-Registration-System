@@ -86,14 +86,12 @@ $cnt=1;
 while($row=mysqli_fetch_array($sql))
 {?>
 <h3><?php echo htmlentities($row['newstitle']);?></h3>
-
-<small><?php echo htmlentities($row['posting_Date']);?></small>
+<small><?php echo htmlentities($row['postingDate']);?></small>
 <hr />   
 <p><?php echo htmlentities($row['newsDescription']);?></p>                  
 <?php } ?> 
                      
                         </ul>
-                   
                     </marquee>
                        
                     </div>
